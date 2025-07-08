@@ -1,10 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Fretvision App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fretvisoon - Music Tuition App</title>
+  <style>
+    :root {
+      --orange: #FF6F00;
+      --light-orange: #FFA040;
+      --dark-orange: #E65100;
+      --white: #fff;
+      --gray: #f9f9f9;
+      --text: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--gray);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--orange);
+      color: var(--white);
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: var(--dark-orange);
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 2rem;
+      background-color: var(--light-orange);
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .feature {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .testimonials {
+      background: var(--orange);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .contact {
+      background: var(--white);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer {
+      background: var(--dark-orange);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+    }
+
+    button {
+      background-color: var(--orange);
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: var(--dark-orange);
+    }
+  </style>
 </head>
 <body>
-  It Begins
+
+  <header>
+    <h1>Fretvisoon</h1>
+    <p>Your personalized music tuition companion</p>
+  </header>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Master Guitar and Music Theory the Smart Way</h2>
+    <p>Fretvisoon combines structured learning with intuitive tools to help you grow faster.</p>
+    <button>Start Learning</button>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature">
+      <h3>Interactive Lessons</h3>
+      <p>Engage with step-by-step lessons tailored to your skill level.</p>
+    </div>
+    <div class="feature">
+      <h3>Chord Visualizer</h3>
+      <p>See how chords are built and where to place your fingers.</p>
+    </div>
+    <div class="feature">
+      <h3>Progress Tracker</h3>
+      <p>Track your musical journey and achievements over time.</p>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Students Say</h2>
+    <p>“Fretvisoon helped me finally understand music theory!” – Alex M.</p>
+    <p>“Great visuals, excellent structure. Love the orange theme!” – Jamie R.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <p>Have questions or feedback? We'd love to hear from you!</p>
+    <button>Email Us</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fretvisoon. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
