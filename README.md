@@ -3,6 +3,9 @@ TODO:
 - DECIDE ON BACKEND
 - PHP, NODE.JS, PYTHON, ETC
 
+- DECIDE HOSTING PROVIDER
+
+
 - INTEGRATE ACUITY API
 - appointment.canceled
 - appointment.changed
